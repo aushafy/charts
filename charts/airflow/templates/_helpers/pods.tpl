@@ -103,7 +103,7 @@ EXAMPLE USAGE: {{ include "airflow.container.git_sync" (dict "Release" .Release 
     - name: GIT_SYNC_ROOT
       value: "/dags"
     - name: GIT_SYNC_DEST
-      value: "repo"
+      value: {{ .Values.dags.gitSync.dest | quote }}
     - name: GIT_SYNC_REPO
       value: {{ .Values.dags.gitSync.repo | quote }}
     - name: GIT_SYNC_BRANCH

@@ -1036,6 +1036,11 @@ dags:
     ##
     revision: HEAD
 
+    ## the git-sync --dest parameter it's possible to rename the project folder 
+    ## EXAMPLE: if you have repo like this https://github.com/USERNAME/repo-name.git and the project folder name can be 'repo' instead of 'repo-name'
+    ##
+    dest: repo
+
     ## shallow clone with a history truncated to the specified number of commits
     ##
     depth: 1

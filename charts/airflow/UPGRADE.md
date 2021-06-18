@@ -1,5 +1,10 @@
 # Upgrading Steps
 
+## `v8.2.X` → `v8.3.0`
+
+### VALUES - New:
+-  `dags.gitSync.dest`
+
 ## `v8.1.X` → `v8.2.0`
 
 __The following IMPROVEMENTS have been made:__
