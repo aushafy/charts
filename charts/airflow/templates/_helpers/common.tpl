@@ -65,7 +65,7 @@ The path containing DAG files
 */}}
 {{- define "airflow.dags.path" -}}
 {{- if .Values.dags.gitSync.enabled -}}
-{{- printf "%s/dags/%s" (.Values.dags.path | trimSuffix "/") (.Values.dags.gitSync.repoSubPath | trimAll "/") -}}
+{{- printf "%s/repo/%s" (.Values.dags.path | trimSuffix "/") (.Values.dags.gitSync.repoSubPath | trimAll "/") -}}
 {{- else -}}
 {{- printf .Values.dags.path -}}
 {{- end -}}
